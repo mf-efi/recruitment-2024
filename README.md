@@ -95,3 +95,5 @@ Here are some things in different categories that you can do to make the app bet
 * Structure the code and project folder structure in a modular and logical fashion for extra points.
 
 * Try to avoid any bugs or weirdness in the operating logic.
+
+* Feel free to add would-be-nice-to-haves in the app / infra setup that you didn't have time to complete as possible further improvements in README.
