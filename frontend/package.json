@@ -1,0 +1,38 @@
+{
+  "name": "weatherapp-frontend",
+  "version": "0.0.1",
+  "description": "Weatherapp exercise frontend",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrako/weatherapp.git"
+  },
+  "author": "Marko Klemetti <marko.klemetti@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --config webpack.config.js --progress --inline --colors",
+    "lint": "node_modules/.bin/eslint --ext .js --ext .jsx ."
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "html-webpack-plugin": "^4.4.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
