@@ -38,35 +38,19 @@ Here are some things in different categories that you can do to make the app bet
 
 * The developers are still keen to run the app and its pipeline on their own computers. Share the development files for the container by using volumes, and make sure the containers are started with a command enabling hot reload.
 
-### Node and React development
-
-*Node and React applications are highly popular technologies. Understanding them will give you an advantage in front- and back-end development projects.*
-
-* The application now only reports the current weather. It should probably report the forecast e.g. a few hours from now. (tip: [openweathermap api](https://openweathermap.org/forecast5))
-
-* There are [eslint](http://eslint.org/) errors. Sloppy coding it seems. Please help.
-
-* The app currently reports the weather only for location defined in the *backend*. Shouldn't it check the browser location and use that as the reference for making a forecast? (tip: [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation))
-
-### Testing
-
-*Test automation is key in developing good quality applications. Finding bugs in early stages of development is valuable in any software development project. With Robot Framework you can create integration tests that also serve as feature descriptions, making them exceptionally useful.*
-
-* Create automated tests for the application. (tip: [mocha](https://mochajs.org/))
-
-* Create [Robot Framework](http://robotframework.org/) integration tests. Hint: Start by creating a third container that gives expected weather data and direct the backend queries there by redefining the **MAP_ENDPOINT**.
-
 ### Cloud
 
 *The biggest trend of recent times is developing, deploying and hosting your applications in cloud. Knowing cloud -related technologies is essential for modern IT specialists.*
 
 * Set up the weather service in a free cloud hosting service, e.g. [Azure](https://azure.microsoft.com/en-us/free/), [AWS](https://aws.amazon.com/free/) or [Google Cloud](https://cloud.google.com/free/).
+* Enable external access to weather app via HTTP reverse proxy. We suggest creating one compute instance e.g. for AWS one EC2 instance, that will host both weather app and before mentioned proxy. Remember that Weather App should be exposed in a secure way.
+* Enable external SSH access and add id_rsa_internship.pub key, which you can find in this repository. We would like to check your work so grant us admin rights on your test system.
 
 ### Ansible
 
 *Automating deployment & provisioning processes saves a lot of valuable time, reduces chances of costly errors and allows easier collaboration.*
 
-* Write [Ansible](http://docs.ansible.com/ansible/intro.html) playbooks for installing [docker](https://www.docker.com/) and the app itself.
+* Write [Ansible](http://docs.ansible.com/ansible/intro.html) playbooks for installing [docker](https://www.docker.com/) and the app itself. These playbooks should work both for local and cloud environment.
 
 ### Terraform
 
@@ -84,8 +68,6 @@ Here are some things in different categories that you can do to make the app bet
 
 ### ProTips
 
-* When you are coding the application imagine that you are a freelancer developer developing an application for an important customer.
-
 * The app must be ready to deploy and work flawlessly.
 
 * The app must be easy to deploy to your local machine with and without Docker. 
@@ -93,7 +75,5 @@ Here are some things in different categories that you can do to make the app bet
 * Detailed instructions to run the app should be included in your forked version because a customer would expect detailed instructions also.
 
 * Structure the code and project folder structure in a modular and logical fashion for extra points.
-
-* Try to avoid any bugs or weirdness in the operating logic.
 
 * Feel free to add would-be-nice-to-haves in the app / infra setup that you didn't have time to complete as possible further improvements in README.
